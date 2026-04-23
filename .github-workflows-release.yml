@@ -23,6 +23,6 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/ThisIsFeeder/demo-app:${{ github.ref_name }}
+          tags: ghcr.io/thisisfeeder/demo-app:${{ github.ref_name }}
           build-args: |
             APP_VERSION=${{ github.ref_name }}
