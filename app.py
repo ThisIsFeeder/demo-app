@@ -6,5 +6,9 @@ app = Flask(__name__)
 def index():
     return f"Hello from demo-app {os.environ.get('APP_VERSION', '0.0.0')}\n"
 
+@app.route("/health")
+def health():
+    return f"OK"
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8080)
